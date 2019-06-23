@@ -28,7 +28,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            bifrost: path.resolve(__dirname, 'engine')
+            bifrost: path.resolve(__dirname)
         },
         extensions: [
             '.ts',

@@ -1,6 +1,6 @@
 import * as Bifrost from 'bifrost';
 
-export default class DemoButton extends Bifrost.GUI.Control {
+export default class BifrostButton extends Bifrost.GUI.Control {
 
     public render(): Bifrost.GUI.Control.Tree {
         return [
@@ -17,7 +17,7 @@ export default class DemoButton extends Bifrost.GUI.Control {
             }
 
             .${ HTMLButtonElement.name } {
-                
+
             }
         `;
     }
