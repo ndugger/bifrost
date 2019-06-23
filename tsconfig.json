@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "jsxFactory": "Bifrost.GUI.Control.createNode",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "module": "es6",
+        "moduleResolution": "node",
+        "paths": {
+            "*": [ "*" ],
+            "bifrost": [ "./engine" ],
+            "bifrost/*": [ "./engine/*" ]
+        },
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es6"
+    },
+    "include": [
+        "**/*",
+        "node_modules/cortex/**/*.ts",
+        "node_modules/vincent/**/*.ts"
+    ]
+}
