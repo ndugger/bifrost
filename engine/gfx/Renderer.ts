@@ -1,5 +1,11 @@
 import * as Vincent from 'vincent';
 
-export default class Renderer {
-    
+namespace Renderer {
+
 }
+
+class Renderer {
+
+}
+
+export default Renderer;

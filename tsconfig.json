@@ -2,6 +2,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "jsx": "react",
         "jsxFactory": "Bifrost.GUI.Control.createNode",
         "lib": [
