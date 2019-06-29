@@ -1,5 +1,4 @@
 const path = require('path');
-const env = process.env;
 
 module.exports = {
     mode: 'development',
