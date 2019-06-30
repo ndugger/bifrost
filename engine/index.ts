@@ -3,6 +3,7 @@ import ECSEntity from './ecs/Entity';
 import ECSSystem from './ecs/System';
 
 import GFXCamera from './gfx/Camera';
+import GFXGeometry from './gfx/Geometry';
 import GFXMaterial from './gfx/Material';
 import GFXRenderer from './gfx/Renderer';
 
@@ -19,6 +20,7 @@ export namespace ECS {
 
 export namespace GFX {
     export import Camera = GFXCamera;
+    export import Geometry = GFXGeometry;
     export import Material = GFXMaterial;
     export import Renderer = GFXRenderer;
 }
