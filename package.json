@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "cortex": "github:ndugger/cortex",
-    "reflect-metadata": "^0.1.13",
     "vincent": "github:ndugger/vincent"
   }
 }

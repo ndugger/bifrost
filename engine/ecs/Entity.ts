@@ -1,11 +1,11 @@
 import UUID from '../sys/UUID';
 import Component from './Component';
 
-class EntityInstance<T extends { [ Key in keyof T ]: Component<unknown> }> {
+class EntityInstance<Components extends { [ Key in keyof Components ]: Component<unknown> }> {
 
     public readonly id: UUID;
 
-    public constructor(components: T & { id: never }) {
+    public constructor(components: Components & { id: never }) {
         this.id = UUID.random();
         Object.assign(this, components);
     }
