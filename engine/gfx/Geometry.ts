@@ -3,15 +3,13 @@ import Material from './Material';
 namespace Geometry {
 
     export interface Options {
-        materials: Material[];
-        points: number[];
+        points: Float32Array;
     }
 }
 
 class Geometry implements Geometry.Options {
 
-    public readonly materials: Material[];
-    public readonly points: number[];
+    public readonly points: Float32Array;
 
     public constructor(options: Geometry.Options) {
         Object.assign(this, options);

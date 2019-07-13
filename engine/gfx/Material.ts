@@ -5,12 +5,16 @@ import VertexShader from './shaders/VertexShader';
 
 import Renderer from './Renderer';
 
-class Material<Attributes, Inputs, Uniforms> {
+class Material<Attributes = any, Inputs = any, Uniforms = any> {
 
     public parameters: Material.Parameters<Attributes, Inputs, Uniforms>;
 
     public constructor(parameters: Material.Parameters<Attributes, Inputs, Uniforms>) {
         this.parameters = parameters;
+    }
+
+    public paint(attributes: Attributes): { inputs: Inputs, uniforms: Uniforms } {
+        return this.parameters.paint(attributes);
     }
 }
 
@@ -21,7 +25,7 @@ namespace Material {
         inputs: Inputs,
         program: Vincent.Program;
         uniforms: Uniforms,
-        update(attributes: Attributes): {
+        paint(attributes: Attributes): {
             inputs: Inputs,
             uniforms: Uniforms
         }

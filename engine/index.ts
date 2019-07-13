@@ -10,6 +10,8 @@ import GFXRenderer from './gfx/Renderer';
 import GUIControl from './gui/Control';
 import GUIFragment from './gui/Fragment';
 
+import SYSEvent from './sys/Event';
+import SYSObservable from './sys/Observable';
 import SYSUUID from './sys/UUID';
 
 export namespace ECS {
@@ -31,5 +33,7 @@ export namespace GUI {
 }
 
 export namespace SYS {
+    export import Event = SYSEvent;
+    export import Observable = SYSObservable;
     export import UUID = SYSUUID;
 }
